@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dq_python"
+version = "0.1.0"
+description = ""
+authors = ["bubio <bubio66@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Pillow = "^8.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^20.8b1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+"dq_python" = 'dq_python.main:main'
